@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portafolio Sara</title>
+<link rel="stylesheet" href="style1.css">
+<link rel="stylesheet" href="style2.css">
+<link rel="stylesheet" href="style3.css">
+<link rel="stylesheet" href="style4.css">
+<link rel="stylesheet" href="style5.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Sara Sandoval</h1>
+    <nav>
+        <ul>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#trayectoria">Trayectoria</a></li>
+            <li><a href="#conocimientos">Conocimientos</a></li>
+            <li><a href="#collage">Collage</a></li>
+            <li><a href="#formulario">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="contenedor-principal">
+
+
+<section id="sobre-mi" class="card">
+    <h2>Hola soy Sara</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum totam optio, amet eveniet laborum et id eum asperiores! Quis deserunt error, quidem porro non libero soluta praesentium hic laboriosam magni.</h2>
+        <p class="lorem-negro">Lorem ipsum dolor sit amet...</p>
+    <img src="images.webp" width="150">
+</section>
+
+<section id="trayectoria" class="card">
+    <h2>Trayectoria</h2>
+    <ul>
+        <li>Aprendiz de programación</li>
+        <li>Proyecto en MySQL</li>
+    </ul>
+</section>
+
+<section id="conocimientos" class="card">
+    <h2>Conocimientos</h2>
+    <div class="skills">
+        <span>Python</span>
+        <span>HTML</span>
+        <span>CSS</span>
+    </div>
+</section>
+
+<section id="collage" class="card">
+    <h2>Collage</h2>
+    <div id="collage">
+        <img id="img1" src="angelique-boyer.webp">
+        <img src="images.jpeg">
+        <img src="images.webp">
+        <img src="image.avif">
+        <img src="angelique boyer.jpeg">
+    </div>
+</section>
+
+<section id="formulario" class="card">
+    <h2>Contacto</h2>
+    <form class="form-separado" onsubmit="mostrarMensaje(event)">
+        <input type="text" placeholder="Nombre">
+        <input type="email" placeholder="Correo">
+        <textarea placeholder="Mensaje"></textarea>
+        <button>Enviar</button>
+        <p id="mensaje" style="display:none; color:#050505; margin-top:10px;"></p>
+    </form>
+</section>
+
+</main>
+
+<footer>
+<p>© 2026 Sara Sandoval</p>
+</footer>
+
+<script>
+function mostrarMensaje(event) {
+    event.preventDefault();
+    document.getElementById("mensaje").innerText = "Mensaje enviado, muchas gracias Sara";
+    document.getElementById("mensaje").style.display = "block";
+}
+</script>
+
+</body>
+</html>

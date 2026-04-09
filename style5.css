@@ -1,0 +1,48 @@
+.form-separado {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    background: #fdf5e6; /* crema pastel */
+    color: #1e293b;
+    font-size: 1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    transform: scale(1.02);
+    box-shadow: 0 6px 10px rgba(255,182,193,0.3);
+}
+
+button {
+    background: #fbb6ce; 
+    color: #1e293b;
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+button:hover {
+    background: #fcd5e0;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(255,182,193,0.3);
+}
+
+.cursiva {
+    font-style: italic;
+    color: #fbb6ce;
+}
+
+#formulario {
+    margin-top: 50px;
+}

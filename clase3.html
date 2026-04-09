@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi Collage</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #d4d4d4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    background: #f5f5fa;
+    padding: 20px;
+    border-radius: 20px;
+    width: 350px;
+    text-align: center;
+    color: #1e293b;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+    margin-bottom: 15px;
+    color: #bd7f95;
+    font-style: italic;
+}
+
+#collage {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-top: 15px;
+}
+
+#collage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#collage img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(255,182,193,0.3);
+}
+
+#img1 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+    <h2>Mi Collage</h2>
+    <p>Sara Sandoval</p>
+    <p>Desarrolladora en progreso</p>
+
+    <div id="collage">
+        <img id="img1" src="angelique-boyer.webp">
+        <img src="images.jpeg">
+        <img src="images.webp">
+        <img src="image.avif">
+        <img src="angelique-boyer-1.png">
+    </div>
+</div>
+
+</body>
+</html>
